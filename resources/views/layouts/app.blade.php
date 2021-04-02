@@ -13,7 +13,7 @@
 
     <nav class="flex justify-between space-x-4 bg-white h-16 rounded-b-lg mb-6">
         <ul class="flex items-center">
-            <li class="inline-block"><a href="" class="p-3">Home</a></li>
+            <li class="inline-block"><a href="{{route('home')}}" class="p-3">Home</a></li>
             <li class="inline-block"><a href="" class="p-3">Dashboard</a></li>
             <li class="inline-block"><a href="" class="p-3">Posts</a></li>
         </ul>
@@ -22,7 +22,7 @@
 
         <ul class="flex items-center">
             <li class="inline-block"><a href="" class="p-3">Login</a></li>
-            <li class="inline-block"><a href="" class="p-3">Register</a></li>
+            <li class="inline-block"><a href="{{route('register')}}" class="p-3">Register</a></li>
             <li class="inline-block"><a href="" class="p-3">Logout</a></li>
         </ul>
 
