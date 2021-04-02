@@ -25,7 +25,7 @@
             <li class="inline-block"><a href="" class="p-3">Gimna</a></li>
             @endauth
             @guest
-            <li class="inline-block"><a href="" class="p-3">Login</a></li>
+            <li class="inline-block"><a href="{{route('login')}}" class="p-3">Login</a></li>
             <li class="inline-block"><a href="{{route('register')}}" class="p-3">Register</a></li>
             @endguest
             @auth
