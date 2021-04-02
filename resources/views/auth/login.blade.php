@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="flex justify-center">
-    <div class="w-4/12 bg-white p-6 rounded-lg">
+    <div class="w-4/12 bg-white p-6 rounded-lg mt-24">
 
         @if(session('status'))
         <div class="bg-red-400 p-3 text-white rounded-lg text-center mb-2">
