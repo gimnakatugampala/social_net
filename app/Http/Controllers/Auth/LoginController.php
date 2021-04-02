@@ -25,5 +25,8 @@ class LoginController extends Controller
         if (!Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             return back()->with('status', 'Invalid Email / Password');
         }
+
+        //rediect
+        return redirect()->route('posts');
     }
 }
