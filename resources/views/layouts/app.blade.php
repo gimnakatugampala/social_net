@@ -14,16 +14,23 @@
     <nav class="flex justify-between space-x-4 bg-white h-16 rounded-b-lg mb-6">
         <ul class="flex items-center">
             <li class="inline-block"><a href="{{route('home')}}" class="p-3">Home</a></li>
-            <li class="inline-block"><a href="" class="p-3">Dashboard</a></li>
+            <li class="inline-block"><a href="{{route('dashboard')}}" class="p-3">Dashboard</a></li>
             <li class="inline-block"><a href="" class="p-3">Posts</a></li>
         </ul>
 
         <h1 class="flex items-center text-4xl text-blue-500">Social Net</h1>
 
         <ul class="flex items-center">
+            @auth
+            <li class="inline-block"><a href="" class="p-3">Gimna</a></li>
+            @endauth
+            @guest
             <li class="inline-block"><a href="" class="p-3">Login</a></li>
             <li class="inline-block"><a href="{{route('register')}}" class="p-3">Register</a></li>
+            @endguest
+            @auth
             <li class="inline-block"><a href="" class="p-3">Logout</a></li>
+            @endauth
         </ul>
 
     </nav>
